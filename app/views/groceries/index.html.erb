@@ -1,0 +1,8 @@
+<h1> Grocery List </h1>
+
+<% @groceries.each do |grocery| %>
+<li> <%= link_to grocery.title, grocery_path(grocery[:id]) %> 
+
+</li>
+
+<% end %>
