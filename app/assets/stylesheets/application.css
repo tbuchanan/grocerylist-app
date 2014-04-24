@@ -14,3 +14,33 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background-image: url(http://i.imgur.com/RK0X6k2.png);
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {}
+@media screen and (min-width:640px) and (max-width:959px) {}
+@media screen and (min-width:960px) and (max-width:1279px) {}
+@media screen and (min-width:1280px) and (max-width:1599px) {}
+@media screen and (min-width:1600px) {}
+@media screen and (min-width:1920px) {}
+@media print {}
+
+
+
+
+
+
+
