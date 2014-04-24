@@ -1,8 +1,10 @@
 <h1> Grocery List </h1>
-
+<%= link_to "New Grocery Item", new_grocery_path, :class => "btn btn-primary" %>
+<br></br>
 <% @groceries.each do |grocery| %>
 <li> <%= link_to grocery.title, grocery_path(grocery[:id]) %> 
-
+	  <%= link_to "edit", edit_grocery_path(grocery[:id]) %>
+	  <%= link_to "delete", grocery, method: :delete, data: { confirm: "You sure?"}, :class => "btn btn-warning"%>
 </li>
 
 <% end %>
