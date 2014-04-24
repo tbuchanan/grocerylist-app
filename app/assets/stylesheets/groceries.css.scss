@@ -4,15 +4,11 @@
 
 h1 {
 	text-shadow: 5px 1px 1px #3498db;
-	font-size: 80px;
+	font-size: 60px;
 	text-align: center;
 	color: #ecf0f1;
+	line-height: 33px;
 }
-
-hr {
-
-}
-
 
 body {
 	text-align: center;
@@ -20,20 +16,23 @@ body {
 
 .list {
 	color: white;
-	text-shadow: 1px 1px 1px #3498db;
-	font-size: 35px;
+	text-shadow: 2px 1px 1px #3498db;
+	font-size: 30px;
+	line-height: 16px;
 }
 
 h2 {
 	color: white;
 	text-shadow: 2px 1px 1px #3498db;
 	font-size: 28px;
+	text-align: center;
 }
 
 p {
 	color: white;
 	text-shadow: 2px 1px 1px #3498db;
 	font-size: 30px;
+	text-align: center;
 }
 
 h3 {
@@ -45,6 +44,7 @@ h3 {
 	border-color: yellow;
 	border-width: 2.5px;
 	display: inline;
+	text-align: center;
 
 
 }

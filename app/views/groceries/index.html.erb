@@ -1,17 +1,17 @@
 
 <h1 class="brand"> Grocery List </h1>
 <hr></hr>
-<a class="primary"><%= link_to "Add Grocery Item", new_grocery_path, :class => "btn btn-warning btn-lg" %></a>
-</a>
+<%= link_to "Add Grocery Item", new_grocery_path, :class => "btn btn-warning btn-lg" %>
 <br></br>
-<div class="container-fluid">
+
 <% @groceries.each do |grocery| %>
-	<ul><%= link_to grocery.title, grocery_path(grocery[:id]), :class => "list" %></ul>
+	<%= link_to grocery.title, grocery_path(grocery[:id]), :class => "list" %>
+	<br></br>
 	<%= link_to "Edit", edit_grocery_path(grocery[:id]), :class => "btn btn-info" %>
 
 	<%= link_to "Delete", grocery, method: :delete, data: { confirm: "You sure?"}, :class => "btn btn-danger"%>
-	  <!-- <br></br> -->
-</div>
+	  <br></br>
+
 <% end %>
 
 <!-- :class => "btn btn-warning" -->
