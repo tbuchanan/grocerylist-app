@@ -1,17 +1,13 @@
 
 <h1 class="brand"> Grocery List </h1>
 <hr></hr>
-<%= link_to "Add Grocery Item", new_grocery_path, :class => "btn btn-warning btn-lg" %>
+  <%= link_to "Add Grocery Item", new_grocery_path, :class => "btn btn-warning btn-lg" %>
 <br></br>
 
 <% @groceries.each do |grocery| %>
 	<%= link_to grocery.title, grocery_path(grocery[:id]), :class => "list" %>
 	<br></br>
 	<%= link_to "Edit", edit_grocery_path(grocery[:id]), :class => "btn btn-info" %>
-
-	<%= link_to "Delete", grocery, method: :delete, data: { confirm: "You sure?"}, :class => "btn btn-danger"%>
-	  <br></br>
-
+	<%= link_to "Delete", grocery, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
+	<br></br>
 <% end %>
-
-<!-- :class => "btn btn-warning" -->

@@ -7,16 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 groceries = Grocery.create([
-  {title: "Toilet Paper", description: "Scott."},
-
   {title: "Carrots", description: "Green giant."},
-
   {title: "Celery", description: "Ore-Ida."},
-
   {title: "Wine", description: "Silverado Vineyards"},
-
-  {title: "Beer", description: "Stella Artois."},
-
+  {title: "Toothpaste", description: "Colgate"},
   {title: "Cheese", description: "Parmesan."}
-
-   ])
+])

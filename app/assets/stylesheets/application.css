@@ -18,16 +18,11 @@
 body {
 	background-image: url(http://i.imgur.com/RK0X6k2.png);
 	background-repeat: no-repeat;
-	position: relative;
+  background-size: fixed;
+  position: relative;
 	z-index: 1;
 	text-align: center;
 }
-
-
-
-
-
-
 
 @media screen and (max-width:320px) {
 }
