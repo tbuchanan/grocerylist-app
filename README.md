@@ -11,9 +11,9 @@ Features:
 [http://grocery-list-app.herokuapp.com/](http://)
 
 
-##Specs
+###Specifications
 * Ruby 2.0.0
-* Database: Postgresql
+* Postgresql
 
 ###Screenshot
 
