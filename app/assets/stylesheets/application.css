@@ -16,13 +16,15 @@
  */
 
 body {
-	background-image: url(http://i.imgur.com/RK0X6k2.png);
-	background-repeat: no-repeat;
-  background-size: fixed;
+  background: url(http://i.imgur.com/SrnmIeG.jpg?1) no-repeat center center fixed;
   position: relative;
-	z-index: 1;
-	text-align: center;
+  text-align: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
+
 
 @media screen and (max-width:320px) {
 }
