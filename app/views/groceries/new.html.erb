@@ -5,6 +5,6 @@
   <%= f.text_field :title %></br>
   <h2><%= label_tag(:description, "Description") %></h2>
   <%= f.text_area :description %></br>
-  <%= f.submit "Create", :class => "btn btn-info" %>
-<% end %>
-
+  <br><%= f.submit "Create", :class => "btn btn-info" %>
+<% end %></br>
+<%=link_to "Grocery List", groceries_path, :class => "btn btn-warning" %>

@@ -15,7 +15,13 @@ before_action :set_grocery, only: [:edit, :show, :update, :destroy]
 
 	def create
 		@grocery = Grocery.create grocery_params
-		redirect_to grocery_path(@grocery)
+		if @grocery.save
+			redirect_to grocery_path(@grocery)
+		else
+			flash[:notice] = "Please enter an item"
+			redirect_to :back
+		end
+
 	end
 
 	def edit
